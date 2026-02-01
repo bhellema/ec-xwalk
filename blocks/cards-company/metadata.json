@@ -1,0 +1,19 @@
+{
+  "name": "cards-company",
+  "displayName": "Cards (Company)",
+  "description": "Grid of company cards with logos, titles, subtitles, descriptions, and website links",
+  "baseBlock": "cards",
+  "usage": {
+    "purpose": "Display company information in a structured grid layout",
+    "contentModel": "Container block with multiple rows, each containing company logo (image) and company info (rich text with title, subtitle, description, and link)"
+  },
+  "sourcePages": [
+    "https://www.themeateater.com/about-us"
+  ],
+  "createdDate": "2026-02-01",
+  "visualCharacteristics": {
+    "layout": "Responsive grid (4 columns on desktop, 1 column on mobile)",
+    "cardStructure": "Company logo at top (in gray background area), content area with title/subtitle/description, footer with website link",
+    "styling": "White cards with subtle border and shadow, hover effect"
+  }
+}

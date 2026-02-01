@@ -1,0 +1,36 @@
+{
+  "templates": [
+    {
+      "name": "listen-page",
+      "urls": [
+        "https://www.themeateater.com/listen",
+        "http://themeateater.com/listen"
+      ],
+      "description": "Podcast and audio content listing page",
+      "blocks": [
+        {
+          "name": "cards-podcast",
+          "instances": [
+            ".podcasts_nB1Ll"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "about-us-page",
+      "urls": [
+        "https://www.themeateater.com/about-us",
+        "http://themeateater.com/about-us"
+      ],
+      "description": "About Us page with company information",
+      "blocks": [
+        {
+          "name": "cards-company",
+          "instances": [
+            ".columns"
+          ]
+        }
+      ]
+    }
+  ]
+}

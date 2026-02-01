@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.themeateater.com/about-us",
+  "path": "about-us",
+  "timestamp": "2026-02-01T18:50:39.482Z",
+  "title": "About Us | MeatEater | MeatEater",
+  "template": "about-us-page",
+  "blocks": [
+    "cards-company"
+  ]
+}
