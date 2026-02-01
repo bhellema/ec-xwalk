@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-podcast",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-01-30T20:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.themeateater.com/listen",
+    "originPage": "Podcast listing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "podcast-listing",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "grid of cards, each with large cover image + title link",
+    "buttonCount": 0,
+    "imageCount": 20
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "podcast directory pages",
+      "audio content listings",
+      "media library displays with square cover art"
+    ],
+    "notSuitableFor": [
+      "text-heavy content without images",
+      "product grids with detailed descriptions",
+      "blog post listings with article previews"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/listen"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-30T20:55:00.000Z"
+  }
+}

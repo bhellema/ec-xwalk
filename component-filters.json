@@ -34,6 +34,12 @@
     ]
   },
   {
+    "id": "cards-podcast",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
