@@ -2,7 +2,7 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--ec-xalk--bhellema.aem.page/
+- Preview: https://main--ec-xwalk--bhellema.aem.page/
 - Live: https://main--ec=xwalk--bhellema.aem.live/
 
 ## Documentation
