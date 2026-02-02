@@ -1,5 +1,4 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   // ImageLink block has two rows with one cell each
@@ -32,18 +31,13 @@ export default function decorate(block) {
     anchor.href = linkUrl;
     anchor.className = 'image-link-link';
 
-    // Transfer instrumentation from the image row to the anchor
-    // moveInstrumentation(imageRow, anchor);
-
     // Optimize the image if it exists
     if (img && !picture) {
       const optimizedPic = createOptimizedPicture(img.src, img.alt, false);
-      // moveInstrumentation(img, optimizedPic.querySelector('img'));
       picture = optimizedPic;
     } else if (picture && img) {
       // Optimize existing picture
       const optimizedPic = createOptimizedPicture(img.src, img.alt, false);
-      // moveInstrumentation(img, optimizedPic.querySelector('img'));
       picture = optimizedPic;
     }
 
