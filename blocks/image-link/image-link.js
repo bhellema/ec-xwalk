@@ -33,7 +33,7 @@ export default function decorate(block) {
     anchor.className = 'image-link-link';
 
     // Transfer instrumentation from the image row to the anchor
-    moveInstrumentation(imageRow, anchor);
+    // moveInstrumentation(imageRow, anchor);
 
     // Optimize the image if it exists
     if (img && !picture) {
