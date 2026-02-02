@@ -1,0 +1,25 @@
+.image-link {
+  display: block;
+  width: 100%;
+}
+
+.image-link .image-link-link {
+  display: block;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.image-link .image-link-link:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.image-link picture {
+  display: block;
+}
+
+.image-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

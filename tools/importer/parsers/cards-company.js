@@ -51,6 +51,9 @@ export default function parse(element, { document }) {
     // Extract description - get the content div text
     const contentDiv = card.querySelector('.card-content .content');
 
+    // Extract website link from card footer
+    const footerLink = card.querySelector('.card-footer');
+
     // Only process cards that have at least a title
     if (!title) {
       return;
@@ -117,6 +120,20 @@ export default function parse(element, { document }) {
       const p = document.createElement('p');
       p.textContent = contentDiv.textContent.trim();
       textCell.appendChild(p);
+    }
+
+    // Add website link if available
+    if (footerLink) {
+      console.log('Found footer link:', footerLink.textContent.trim(), footerLink.href);
+      const linkP = document.createElement('p');
+      const a = document.createElement('a');
+      a.href = footerLink.querySelector('a').href;
+      a.textContent = footerLink.textContent.trim();
+      linkP.appendChild(a);
+      textCell.appendChild(linkP);
+      console.log('Added link to textCell');
+    } else {
+      console.log('No footer link found for card:', title?.textContent);
     }
 
     // Add row with 2 columns

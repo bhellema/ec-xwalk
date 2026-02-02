@@ -46,6 +46,7 @@ var CustomImportScript = (() => {
       }
       const title = card.querySelector(".title");
       const contentDiv = card.querySelector(".card-content .content");
+      const footerLink = card.querySelector(".card-footer");
       if (!title) {
         return;
       }
@@ -89,6 +90,18 @@ var CustomImportScript = (() => {
         const p = document.createElement("p");
         p.textContent = contentDiv.textContent.trim();
         textCell.appendChild(p);
+      }
+      if (footerLink) {
+        console.log("Found footer link:", footerLink.textContent.trim(), footerLink.href);
+        const linkP = document.createElement("p");
+        const a = document.createElement("a");
+        a.href = footerLink.querySelector("a").href;
+        a.textContent = footerLink.textContent.trim();
+        linkP.appendChild(a);
+        textCell.appendChild(linkP);
+        console.log("Added link to textCell");
+      } else {
+        console.log("No footer link found for card:", title == null ? void 0 : title.textContent);
       }
       cells.push([imageCell, textCell]);
     });
@@ -156,7 +169,8 @@ var CustomImportScript = (() => {
         '[class*="submenu_"]'
       ]);
       WebImporter.DOMUtils.remove(element, [
-        "footer",
+        "body > footer",
+        // Only remove page footer, not card footers
         ".pageFooter",
         '[class*="pageFooter"]'
       ]);

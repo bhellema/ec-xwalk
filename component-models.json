@@ -340,6 +340,32 @@
     ]
   },
   {
+    "id": "imageLink",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "value": "",
+        "label": "Image Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "link",
+        "value": "",
+        "label": "Link URL",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "modal",
     "fields": [
       {

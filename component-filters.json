@@ -73,6 +73,10 @@
     ]
   },
   {
+    "id": "imageLink",
+    "components": []
+  },
+  {
     "id": "table",
     "components": [
       "table-row"

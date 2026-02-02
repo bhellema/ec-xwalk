@@ -71,9 +71,9 @@ export default function transform(hookName, element, payload) {
       '[class*="submenu_"]'
     ]);
 
-    // Remove footer elements
+    // Remove footer elements (but preserve card footers)
     WebImporter.DOMUtils.remove(element, [
-      'footer',
+      'body > footer', // Only remove page footer, not card footers
       '.pageFooter',
       '[class*="pageFooter"]'
     ]);
