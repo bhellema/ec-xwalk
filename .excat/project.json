@@ -1,0 +1,9 @@
+{
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "type": "xwalk",
+  "contentHostUrl": "author-p141866-e1619657.adobeaemcloud.com",
+  "aemSitePath": "/content/luomedical",
+  "aemAssetsFolderPath": "/content/dam/luomedical",
+  "aemSiteName": "luomedical",
+  "aemSiteTitle": "luomedical.com"
+}

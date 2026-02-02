@@ -40,6 +40,12 @@
     ]
   },
   {
+    "id": "cards-partners",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards-podcast",
     "components": [
       "card"

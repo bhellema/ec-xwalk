@@ -1,0 +1,42 @@
+{
+  "variantName": "hero-partners",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-02-02T01:15:50.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.themeateater.com/about-us/official-partners",
+    "originPage": "Official Partners page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "partners-page-intro",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + heading overlay",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "partner/sponsor showcase pages",
+      "simple page intros with full-width images",
+      "branding pages with minimal text",
+      "landing pages with visual impact"
+    ],
+    "notSuitableFor": [
+      "pages requiring call-to-action buttons",
+      "complex hero sections with multiple elements",
+      "pages without background images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/about-us/official-partners"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-02T01:15:50.000Z"
+  }
+}

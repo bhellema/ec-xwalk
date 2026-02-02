@@ -1,19 +1,47 @@
 {
-  "name": "cards-company",
+  "variantName": "cards-company",
   "displayName": "Cards (Company)",
-  "description": "Grid of company cards with logos, titles, subtitles, descriptions, and website links",
   "baseBlock": "cards",
-  "usage": {
-    "purpose": "Display company information in a structured grid layout",
-    "contentModel": "Container block with multiple rows, each containing company logo (image) and company info (rich text with title, subtitle, description, and link)"
+  "version": "1.0.0",
+  "created": "2026-02-01T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.themeateater.com/about-us",
+    "originPage": "About Us page",
+    "blockPosition": "middle"
   },
-  "sourcePages": [
-    "https://www.themeateater.com/about-us"
-  ],
-  "createdDate": "2026-02-01",
   "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "company-showcase",
+    "imagePattern": "large",
     "layout": "Responsive grid (4 columns on desktop, 1 column on mobile)",
     "cardStructure": "Company logo at top (in gray background area), content area with title/subtitle/description, footer with website link",
     "styling": "White cards with subtle border and shadow, hover effect"
+  },
+  "contentPattern": {
+    "structure": "logo + title + subtitle + description + link",
+    "imageCount": 4,
+    "cardCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "company information pages",
+      "partner showcase pages",
+      "portfolio/team member grids",
+      "corporate entity displays"
+    ],
+    "notSuitableFor": [
+      "blog post listings",
+      "product catalogs with pricing",
+      "image galleries without text"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/about-us",
+      "/about-us/official-partners"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-02-02T01:15:00.000Z"
   }
 }
